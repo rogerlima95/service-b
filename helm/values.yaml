@@ -1,0 +1,27 @@
+image:
+  repository: rogerlima/service-b
+  tag: latest
+  pullPolicy: IfNotPresent
+
+rabbitmq:
+  host: rabbitmq
+  port: 5672
+  user: user
+  queue: queue
+
+gcs:
+  bucket: bucket-app-203-b
+
+replicaCount: 1
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+service:
+  type: ClusterIP
+  port: 80

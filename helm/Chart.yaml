@@ -1,0 +1,5 @@
+apiVersion: v2
+name: service-b
+description: Helm Chart para o microserviço Service-B
+version: 0.1.0
+appVersion: "1.0"
